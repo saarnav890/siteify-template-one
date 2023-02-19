@@ -1,18 +1,18 @@
 import Link from "next/link"
 
 interface i {
-    name: string
+    initials: string
 }
 
-export default function NavBar() {
+export default function NavBar({initials}:i) {
 return (
-    <div className=" fixed w-full z-10 ">
+    <div className="text-white fixed w-full z-10">
         <div className=" flex flex-row font-f font-semibold w-full text-lg">
         
-        <div className="m-4 text-green-900 flex-1 text-2xl"> 
+        <div className="m-4  flex-1 text-2xl"> 
         
         <Link href={'/'}>
-        Aarnav
+        {initials}
         </Link>
         
         
@@ -23,7 +23,7 @@ return (
 
 
         <div className="m-4 flex-1  flex flex-row justify-end">
-            <div className="flex justify-end text-green-900 gap-10 mr-4">
+            <div className="flex justify-end  gap-10 mr-4">
                 <div>
                     About
                 </div>
