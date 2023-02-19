@@ -11,7 +11,7 @@
       {
         "title": "first project",
         "description": "some cool description",
-        "url": "github.com/someurl",
+        "url": "https://github.com/someurl",
         "stars": 0,
         "language": "Javascript"
       },
