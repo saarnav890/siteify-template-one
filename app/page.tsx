@@ -14,7 +14,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <>
-    <Navbar initials='AS'/>  
+    <Navbar initials={data.firstName[0] + data.lastName[0]}/>  
     <Main firstName={data.firstName}
     lastName={data.lastName}
     email={data.email}
@@ -25,7 +25,7 @@ export default function Home() {
      />
     <About firstParagraph={data.aboutText} secondParagraph=''/>
      <CardsArea projects={data.projects}/>
-    
+
 
     </>
     
