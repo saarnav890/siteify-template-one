@@ -39,7 +39,7 @@ export default function Main({ instagramLink ,lastName, firstName, jobDescriptio
                         <SocialIcon className="hover:scale-110 active:scale-90 duration-200" network='github' url={instagramLink} bgColor='white'/>
                     </div>}
                     <div>
-                        <SocialIcon className="hover:scale-110 active:scale-90 duration-200" network='email' url={email} bgColor='white'/>
+                        <SocialIcon className="hover:scale-110 active:scale-90 duration-200" network='email' url={`mailto:${email}`} bgColor='white'/>
                     </div>
                     
                     
